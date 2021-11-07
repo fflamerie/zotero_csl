@@ -5,9 +5,11 @@ Matériel de la formation ["Créer des styles bibliographiques CSL - Zotero, Men
 
 * Document de cours - [COURS au format html]()- [COURS au format PDF]()
 * [Jeu des 7 erreurs CSL - diaporama au format PDF]() 
-* Exercices de style avec corrigé commenté - [EXERCICES au format html]() - [EXERCICES au format PDF]()
 * Consignes d'un style imaginaire, le style Garni - [GARNI au format html]() - [GARNI au format PDF]()
 * [Bibliothèque Zotero au format RDF : kit CSL, ressources et exemples]()
+* Enoncé des exercices de style - [EXERCICES au format html]() - [EXERCICES au format PDF]()
+* Corrigé commenté des exercices de style - [EXERCICES COR au format html]() - [EXERCICES COR au format PDF]()
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png" /></a><br />Les supports sont mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 3.0 France</a>.
 
