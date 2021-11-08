@@ -19,7 +19,7 @@
 - [Exercice de style 7-correction](#exercice-de-style-7-correction)   
 
 <!-- /MDTOC -->
-<div style="page-break-after: always;"></div>
+
 
 
 ## Exercice de style 1

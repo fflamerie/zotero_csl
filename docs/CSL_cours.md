@@ -36,7 +36,7 @@ incluant une pause ☕, 🍵 ou 🍹 pour chaque demi-journée.
 
 ## 1. Introduction
 
-Pour davantage de détails concernant les rappels ci-dessous, consultez le support de la formation Urfist Bordeaux [Gérer facilement sa bibliographie avec Zotero](https://github.com/fflamerie/zotero_gerer_biblio).
+Pour davantage de détails concernant les rappels 1 à 4 ci-dessous, consultez le support de la formation Urfist Bordeaux [Gérer facilement sa bibliographie avec Zotero](https://github.com/fflamerie/zotero_gerer_biblio).
 
 ### Rappel 1, le répertoire `styles`
 Où puis-je trouver les styles CSL dans Zotero ? Localiser le répertoire de données `zotero`, puis répertoire `styles`.
@@ -49,17 +49,7 @@ Un usage inapproprié des outils de rédaction peut être une autre source d'ano
 
 [Documentation Zotero : Utiliser le module Zotero pour Word](https://www.zotero.org/support/fr/word_processor_plugin_usage)
 
-### Rappel 4, clarté des consignes
-Le plus difficile n'est pas forcément d'encoder le style, mais de disposer de consignes claires et précises, traduisibles dans un langage informatique.
-
-_Deux exemples : les styles Infoclio.ch et école doctorale Droit (Université de Bordeaux), qui fournissent chacun une documentation détaillée, pour une utilisation avec ou sans logiciel de gestion bibliographique._
-
-Baumann, J. (2021). Style de citation infoclio.ch. Infoclio.ch. Repéré à https://www.infoclio.ch/fr/Stylecitation
-
-URFIST de Bordeaux. (2019). Citer des références juridiques : Guide et style Zotero de l’école doctorale Droit (Université de Bordeaux). Repéré à http://weburfist.univ-bordeaux.fr/citer-des-references-juridiques-guide-et-style-zotero/
-
-
-### Rappel 5, les types de style
+### Rappel 4, les types de style
 
 Un style bibliographique définit la façon dont les éléments bibliographiques d’un document :
 
@@ -75,21 +65,6 @@ On distingue différents types de style bibliographiques, correspondant à des f
 *   les styles _**note**_, dans lesquels un marqueur (symbole, nombre, etc.) pointe vers une note de bas de page ou de fin, qui permet d’identifier le document cité.
 
 _Chaque type de style a sa logique propre, il peut être tentant de les mélanger, mais cela peut (souvent) aboutir à un résultat incohérent ou difficile à comprendre._
-
-### Rappel 6, documentation Zotero disponible
-
-Les styles bibliographiques sont abordés dans les pages suivantes de la documentation **utilisateur**. Si vous ne les avez pas encore consultées, c'est le moment de le faire car pour la suite nous considérons comme acquis la connaissance de leur contenu.
-
-* [Documentation Zotero : Préférences > Citer](https://www.zotero.org/support/fr/preferences/cite)
-* [Documentation Zotero : Utiliser le module Zotero pour Word](https://www.zotero.org/support/fr/word_processor_plugin_usage)
-* [Documentation Zotero : Les styles bibliographiques](https://www.zotero.org/support/fr/styles)
-
-Aujourd'hui nous nous concentrerons sur ce qui relève de la documentation **développeur**.
-
-* [Documentation Zotero dev : Les styles bibliographiques](https://www.zotero.org/support/fr/dev/citation_styles)
-* [Documentation Zotero dev : Editer des styles CSL - Guide pas à pas](https://www.zotero.org/support/fr/dev/citation_styles/style_editing_step-by-step)
-
-Et commune aux 2, cette page de la base de connaissance : [Documentation Zotero : Les types de documents et les champs associés dans Zotero](https://www.zotero.org/support/fr/kb/item_types_and_fields)
 
 #### Les styles _in-text_
 ##### Les styles numériques
@@ -166,6 +141,32 @@ Le format du marqueur doit être paramétré dans le **traitement de texte**.
 
 ![marqueur_note_word](img/word_note.png)
 
+### Rappel 5, clarté des consignes
+Le plus difficile n'est pas forcément d'encoder le style, mais de disposer de consignes claires et précises, traduisibles dans un langage informatique.
+
+_Deux exemples : les styles Infoclio.ch et école doctorale Droit (Université de Bordeaux), qui fournissent chacun une documentation détaillée, pour une utilisation avec ou sans logiciel de gestion bibliographique._
+
+Baumann, J. (2021). Style de citation infoclio.ch. Infoclio.ch. Repéré à https://www.infoclio.ch/fr/Stylecitation
+
+URFIST de Bordeaux. (2019). Citer des références juridiques : Guide et style Zotero de l’école doctorale Droit (Université de Bordeaux). Repéré à http://weburfist.univ-bordeaux.fr/citer-des-references-juridiques-guide-et-style-zotero/
+
+
+### Rappel 6, documentation Zotero disponible
+
+Les styles bibliographiques sont abordés dans les pages suivantes de la documentation **utilisateur**. Si vous ne les avez pas encore consultées, c'est le moment de le faire car pour la suite nous considérons comme acquise la connaissance de leur contenu.
+
+* [Documentation Zotero : Préférences > Citer](https://www.zotero.org/support/fr/preferences/cite)
+* [Documentation Zotero : Utiliser le module Zotero pour Word](https://www.zotero.org/support/fr/word_processor_plugin_usage)
+* [Documentation Zotero : Les styles bibliographiques](https://www.zotero.org/support/fr/styles)
+
+Aujourd'hui nous nous concentrerons sur ce qui relève de la documentation **développeur**.
+
+* [Documentation Zotero dev : Les styles bibliographiques](https://www.zotero.org/support/fr/dev/citation_styles)
+* [Documentation Zotero dev : Editer des styles CSL - Guide pas à pas](https://www.zotero.org/support/fr/dev/citation_styles/style_editing_step-by-step)
+
+Et commune aux 2, cette page de la base de connaissance : [Documentation Zotero : Les types de documents et les champs associés dans Zotero](https://www.zotero.org/support/fr/kb/item_types_and_fields)
+
+
 ## 2. Principes généraux de CSL
 ### Principes du langage XML, 6 basiques de XML à connaître
 #### Principe 1. Prologue XML
@@ -192,9 +193,11 @@ Ex:
 
 #### Principe 3. Attributs et contenu de l’élément
 
-Un élément peut être qualifié et contenir des informations de deux manières :
+Un élément peut être qualifié et contenir des informations de deux manières.
 
-* soit par du **contenu textuel** inséré entre la balise ouvrante et la balise fermante, ex:
+* soit par du **contenu textuel** inséré entre la balise ouvrante et la balise fermante,
+
+Ex:
 ```
 <author>
    <name>Anton Perdoncin</name>
@@ -235,9 +238,8 @@ Adapté de :
 Zelle, R. M. (2020). Primer - An Introduction to CSL : Understanding CSL Styles : XML Basics. Citation Style Language 1.0.1-dev documentation. Repéré à http://docs.citationstyles.org/en/stable/primer.html#xml-basics
 
 
-
 ### Principes du langage CSL, le jeu des 7 erreurs
-👉 [Jeu des 7 erreurs avec corrigé]() <!--lien-->
+🎰 [Jeu des 7 erreurs avec corrigé](https://github.com/fflamerie/zotero_csl/blob/main/docs/CSL_7_erreurs.pdf)
 
 ## 3. Structure d’un style CSL
 ### Structure générale d’un style CSL
@@ -307,8 +309,8 @@ Exemple du style [Loisir et Société / Society and Leisure](https://www.zotero.
 ### Les principaux types d’éléments
 
 On manipule dans les citations et la bibliographie des données de nature différente, auxquelles des paramétrages spécifiques peuvent être appliqués. A chaque type de donnée correspond ainsi un type d'élément CSL.
-<!-- à modifier-->
-D'autres élements, `group` et `choose`, par exemple, sont davantage des éléments de **rédaction** que de **contenu**.
+
+D'autres élements, `group` et `choose` par exemple, permettent de construire et structurer le code ; ils ne sont pas associés à un type de donnée bibliographique.
 
 *   `text` : le texte à afficher peut être celui d’une `variable`, d’une `macro`, d’un `term` ou d’une `value`
 
@@ -339,13 +341,14 @@ Karcher, S. (2013, 28 octobre). Writing CSL - Features and Best Practices. The Z
 
 ## 4. Les outils
 
-<!--liens-->
 
-Importez dans votre bibliothèque le [fichier zotero-csl.rdf]().
+Importez dans votre bibliothèque Zotero le [fichier form_urfist_csl.rdf](https://raw.githubusercontent.com/fflamerie/zotero_csl/main/docs/form_urfist_csl.rdf).
 
 Installez le style [_Elsevier - Harvard (with titles)_](https://www.zotero.org/styles/elsevier-harvard).
 
-Téléchargez les [consignes du style Garni]().
+Téléchargez les [consignes du style Garni](https://github.com/fflamerie/zotero_csl/blob/main/docs/CSL_consignes_garni.pdf).
+
+Téléchargez les [énoncés des exercices de style](https://github.com/fflamerie/zotero_csl/blob/main/docs/CSL_exercices_style.pdf).
 
 ## 5. L'éditeur de styles Zotero
 Le billet du blog Zotero francophone [Quel outil pour éditer des styles CSL?](https://zotero.hypotheses.org/758) détaille les différents outils disponibles pour l'édition de styles CSL.
@@ -353,7 +356,7 @@ Le billet du blog Zotero francophone [Quel outil pour éditer des styles CSL?](h
 Aujourd'hui nous nous limitons :
 
 * à l'éditeur de styles Zotero,
-* au validateur en ligne,
+* à l'outil de validation en ligne,
 * à l'outil de formatage en ligne.
 
 ### Les outils CSL intégrés à Zotero
