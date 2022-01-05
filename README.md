@@ -1,4 +1,7 @@
 # Créer des styles bibliographiques CSL
+
+⚠️ ⚠️ **Ce support ne prend pas en compte les nouveautés introduites par la version 1.0.2 de CSL, publiée en janvier 2022. Il est entièrement fondé sur la version 1.0.1. 🔜 Il sera mis à jour pour prendre en compte CSL 1.0.2.** ⚠️ ⚠️ 
+
 Matériel de la formation ["Créer des styles bibliographiques CSL - Zotero, Mendeley, Papers : utilisateurs avancés"](https://sygefor.reseau-urfist.fr/#/training/9162/10610) organisée par l'Urfist Bordeaux à Bordeaux le 2021-11-23, 9h-16h.
 
 
