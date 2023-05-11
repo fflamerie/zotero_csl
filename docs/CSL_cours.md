@@ -47,7 +47,7 @@ Tous les problèmes de mise en forme ne proviennent pas des styles bibliographiq
 ### Rappel 3, bon usage des outils de rédaction bibliographique
 Un usage inapproprié des outils de rédaction peut être une autre source d'anomalies dans les citations ou la bibliographie. Assurez-vous ainsi d'utiliser correctement les modules pour traitement de texte, s'agissant notament de l'insertion de préfixes, suffixes et localisateurs pour les citations.
 
-[Documentation Zotero : Utiliser le module Zotero pour Word](https://www.zotero.org/support/fr/word_processor_plugin_usage)
+[Documentation Zotero : Utiliser le module Zotero pour Word](https://docs.zotero-fr.org/word_processor_plugin_usage)
 
 ### Rappel 4, les types de style
 
@@ -155,16 +155,16 @@ URFIST de Bordeaux. (2019). Citer des références juridiques : Guide et style
 
 Les styles bibliographiques sont abordés dans les pages suivantes de la documentation **utilisateur**. Si vous ne les avez pas encore consultées, c'est le moment de le faire car pour la suite nous considérons comme acquise la connaissance de leur contenu.
 
-* [Documentation Zotero : Préférences > Citer](https://www.zotero.org/support/fr/preferences/cite)
-* [Documentation Zotero : Utiliser le module Zotero pour Word](https://www.zotero.org/support/fr/word_processor_plugin_usage)
-* [Documentation Zotero : Les styles bibliographiques](https://www.zotero.org/support/fr/styles)
+* [Documentation Zotero : Préférences > Citer](https://docs.zotero-fr.org/preferences/cite)
+* [Documentation Zotero : Utiliser le module Zotero pour Word](https://docs.zotero-fr.org/word_processor_plugin_usage)
+* [Documentation Zotero : Les styles bibliographiques](https://docs.zotero-fr.org/styles)
 
 Aujourd'hui nous nous concentrerons sur ce qui relève de la documentation **développeur**.
 
-* [Documentation Zotero dev : Les styles bibliographiques](https://www.zotero.org/support/fr/dev/citation_styles)
-* [Documentation Zotero dev : Editer des styles CSL - Guide pas à pas](https://www.zotero.org/support/fr/dev/citation_styles/style_editing_step-by-step)
+* [Documentation Zotero dev : Les styles bibliographiques](https://www.zotero.org/support/dev/citation_styles)
+* [Documentation Zotero dev : Editer des styles CSL - Guide pas à pas](https://www.zotero.org/support/dev/citation_styles/style_editing_step-by-step)
 
-Et commune aux 2, cette page de la base de connaissance : [Documentation Zotero : Les types de documents et les champs associés dans Zotero](https://www.zotero.org/support/fr/kb/item_types_and_fields)
+Et commune aux 2, cette page de la base de connaissance : [Documentation Zotero : Les types de documents et les champs associés dans Zotero](https://docs.zotero-fr.org/kb/item_types_and_fields)
 
 
 ## 2. Principes généraux de CSL
@@ -245,9 +245,9 @@ Zelle, R. M. (2020). Primer - An Introduction to CSL : Understanding CSL Style
 ### Structure générale d’un style CSL
 Un style CSL est structuré en plusieurs éléments.
 
-*   `style` : élément racine - précise notamment la version de CSL, le type de style et permet des paramétrages globaux : gestion des noms à particules avec l'attribut `demote-non-dropping`, de l’indication du nombre de pages, abréviation des prénoms composés. [Spécification CSL : élément `style`](http://docs.citationstyles.org/en/1.0.1/specification.html#the-root-element-cs-style)
+*   `style` : élément racine - précise notamment la version de CSL, le type de style et permet des paramétrages globaux : gestion des noms à particules avec l'attribut `demote-non-dropping`, de l’indication du nombre de pages, abréviation des prénoms composés. [Spécification CSL : élément `style`](http://docs.citationstyles.org/en/stable/specification.html#the-root-element-cs-style)
 
-*   `info` : métadonnées décrivant le style (nom, auteur, etc.) - il faut notamment modifier les éléments `title` et `id` du nouveau style que l'on crée à partir d'un autre, sinon le style créé sera écrasé lors des mises à jour du style duquel il est dérivé. [Spécification CSL : élément `info`](http://docs.citationstyles.org/en/1.0.1/specification.html#info)
+*   `info` : métadonnées décrivant le style (nom, auteur, etc.) - il faut notamment modifier les éléments `title` et `id` du nouveau style que l'on crée à partir d'un autre, sinon le style créé sera écrasé lors des mises à jour du style duquel il est dérivé. [Spécification CSL : élément `info`](http://docs.citationstyles.org/en/stable/specification.html#info)
 
 *   `citation` : décrit la façon dont les citations (appels de citation pour les styles _**in text**_ ou notes pour les styles _**note**_) sont mis en forme. [Spécification CSL : élément `citation`](http://docs.citationstyles.org/en/stable/specification.html#citation)
 
@@ -265,7 +265,7 @@ Les `macro` économisent du code, et surtout facilitent la réutilisation et la 
 
 L'utilisation des macro fait partie des bonnes pratiques recommandées par Sebastian Karcher (plus connu des utilisateurs de Zotero sous son pseudonyme "**adamsmith**").
 
->Bonne pratique 2 : Utilisez abondamment les macros. Gardez les éléments `citation` et `bibliography` brefs et ne leur intégrez qu'au minimum des éléments `choose`.
+>Bonne pratique 2 : Utilisez abondamment les macros. Gardez les éléments `citation` et `bibliography` brefs et ne leur intégrez qu'au minimum des éléments `choose`. [Traduction libre]
 
 Karcher, S. (2013, 28 octobre). Writing CSL - Features and Best Practices. The Zoteroist. Repéré à https://zoteromusings.wordpress.com/2013/10/28/writing-csl-features-and-best-practices/
 
@@ -322,19 +322,19 @@ D'autres élements, `group` et `choose` par exemple, permettent de construire et
 
 *   `choose` : pour créer des conditions - voir _infra_ les différents types de condition
 
-*   `label` : pour paramétrer l'affichage et la mise en forme de l'étiquette applicable pour les variables `page` ou `locator` ou les variables de type nombre
+*   `label` : pour paramétrer l'affichage et la mise en forme de l'étiquette applicable aux variables `page` ou `locator` et aux variables de type nombre
 
-*   `group` : pour paramétrer la ponctuation au niveau d’un groupe d’éléments plutôt qu’élément par élément ; cela évite de générer une ponctuation incohérente et peut permettre d'économiser du code en définissant .
+*   `group` : pour paramétrer la ponctuation au niveau d’un groupe d’éléments plutôt qu’élément par élément ; cela évite de générer une ponctuation incohérente et peut permettre d'économiser du code en définissant.
 
 C'est le moment de revenir sur les bonnes pratiques d'écriture recommandées par Sebastian Karcher, avec la bonne pratique 1.
 
->Bonne pratique 1 : Préférez les `group` et les `group delimiters` aux affixes pour la ponctuation et les espaces entre les objets.
+>Bonne pratique 1 : Préférez les `group` et les `group delimiters` aux affixes pour la ponctuation et les espaces entre les objets. [Traduction libre]
 
 Karcher, S. (2013, 28 octobre). Writing CSL - Features and Best Practices. The Zoteroist. Repéré à https://zoteromusings.wordpress.com/2013/10/28/writing-csl-features-and-best-practices/
 
 Et rappelons la bonne pratique 3.
 
->Bonne pratique 3 : Utilisez des `terms`et des `labels`. N'ajoutez pas de termes ou d'expressions dans des affixes ou en utilisant `text value=`.
+>Bonne pratique 3 : Utilisez des `terms`et des `labels`. N'ajoutez pas de termes ou d'expressions dans des affixes ou en utilisant `text value=`. [Traduction libre]
 
 Karcher, S. (2013, 28 octobre). Writing CSL - Features and Best Practices. The Zoteroist. Repéré à https://zoteromusings.wordpress.com/2013/10/28/writing-csl-features-and-best-practices/
 
@@ -353,6 +353,8 @@ Téléchargez les [énoncés des exercices de style](https://github.com/fflameri
 ## 5. L'éditeur de styles Zotero
 Le billet du blog Zotero francophone [Quel outil pour éditer des styles CSL?](https://zotero.hypotheses.org/758) détaille les différents outils disponibles pour l'édition de styles CSL.
 
+L'éditeur visuel en ligne CSL est par aillerus présenté dans le billet du blog Zotero francophone [Apporter de petites modifications à un style bibliographique](https://zotero.hypotheses.org/3746).
+
 Aujourd'hui nous nous limitons :
 
 * à l'éditeur de styles Zotero,
@@ -369,13 +371,13 @@ Commençons par une brève présentation du premier.
 
 ![apercu](img/apercu_styles.png)
 
-L'_Aperçu des styles_ vous permet de comparer rapidement tout ou partie des styles que vous avez installés, en générant des appels de citation et une bibliographie à partir d'éléments sélectionnés dans votre bibliothèque.
+L'_Aperçu des styles_ vous permet de comparer rapidement tout ou partie des styles que vous avez installés, en générant des appels de citation et une bibliographie à partir de documents sélectionnés dans votre bibliothèque.
 
 Afin que cet aperçu soit significatif et parlant, il importe de s'assurer de deux points.
 
-Tout d'abord, assurez-vous que ces éléments reflètent la **diversité de types de document** que vous allez citer (article, chapitre, mais aussi thèse ou encore brevet ou film ) : vous vérifierez ainsi que tous ces types sont bien pris en compte par les styles que vous comparez. Le style _Nature_, par exemple, ne sera pas le plus adapté si vous citez des documents non publiés comme les thèses. La revue _Nature_ demande aux auteurs de citer un nombre restreint de types de document (voir les [instructions aux auteurs](http://www.nature.com/nature/for-authors/formatting-guide), rubrique _References_), aussi le style CSL _Nature_ encode-t-il la mise en forme des citations uniquement pour ces types de document.
+Tout d'abord, assurez-vous que ces documents reflètent la **diversité de types de document** que vous allez citer (article, chapitre, mais aussi thèse ou encore brevet ou film ) : vous vérifierez ainsi que tous ces types sont bien pris en compte par les styles que vous comparez. Le style _Nature_, par exemple, ne sera pas le plus adapté si vous citez des documents non publiés comme les thèses. La revue _Nature_ demande aux auteurs de citer un nombre restreint de types de document (voir les [instructions aux auteurs](http://www.nature.com/nature/for-authors/formatting-guide), rubrique _References_), aussi le style CSL _Nature_ encode-t-il la mise en forme des citations uniquement pour ces types de document.
 
-Ensuite, et surtout, assurez-vous que ces éléments sont complets et exacts.
+Ensuite, et surtout, assurez-vous que ces documents sont complets et exacts.
 
 *  **S'il manque des informations bibliographiques**, il est logique que le style ne puisse pas les afficher lorsqu'il génère les citations et la bibliographie.
 *  **Si vous faites un usage inadéquat ou détourné de certains champs**, vous générerez également une bibliographie détournée ou inadéquate, ne correspondant pas au résultat que produit le style normalement.
@@ -421,13 +423,7 @@ Le validateur en ligne [http://validator.citationstyles.org/](http://validator.c
 
 **Validateur en ligne : vue d'ensemble**
 
-![valideur_1](img/csl_validate_error_2.png)
-
-
-**Validateur en ligne : focus sur les messages d'erreur**
-
-![valideur_2](img/csl_validate_error_1.png)
-
+![valideur_1](img/csl_validate_error_1.png)
 
 L'outil de formatage en ligne [https://formatter.citationstyles.org/](https://formatter.citationstyles.org/) apportera ensuite automatiquement diverses modifications à votre code, pour que votre fichier soit conforme aux standards de l'entrepôt CSL (notamment indenter correctement votre code ou encore réordonner les éléments enfant de l'élément `info`). Cet outil contrôle également la validité de votre fichier, mais il s'arrête dès la première erreur rencontrée. Il est ainsi préférable de recourir d'abord au validateur, qui affichera lui **toutes** les erreurs de votre code.
 
@@ -465,7 +461,7 @@ Pour installer votre nouveau style, cliquez sur le bouton _+_  du _Gestionnaire 
 ## 6. Modifier un style, macro simple
 ### Exercice de style 1
 
- ✒️ _Pour cet exercice, vous travaillez en équipe avec un collègue :_
+✒️ _Pour cet exercice, vous travaillez en équipe avec un collègue :_
 
 * _l'un est le conducteur et assure la saisie du code,_
 * _l'autre est le navigateur et apporte au conducteur, aide, commentaires et suggestions._
@@ -487,7 +483,7 @@ Nous avons vu les attributs suivants dans notre exemple.
 *   `delimiter-precedes-last` : paramétrage de l'affichage du délimiteur avant le nom du dernier auteur - valeurs `contextual`, `after-inverted-name`, `always` ou `never` - lorsque le délimiteur n'est pas affiché, une espace lui est substituée
 *   `name-as-sort-order` : affichage du nom du ou des auteurs selon l’ordre nom-prénom - valeurs `all` ou `first`
 
-L'élément `et-al` définit quant à lui le texte à afficher et la mise en forme à appliquer au _et al_. [Spécification CSL : élément `et-al`](http://docs.citationstyles.org/en/1.0.1/specification.html#et-al)
+L'élément `et-al` définit quant à lui le texte à afficher et la mise en forme à appliquer au _et al_. [Spécification CSL : élément `et-al`](http://docs.citationstyles.org/en/stable/specification.html#et-al)
 
 #### Non spécifiques aux noms mais utiles pour les noms (graisse, casse, etc.)
 Les attributs suivants permettent de modifier facilement des caractéristiques telles que la casse ou la graisse.
@@ -510,7 +506,7 @@ Exemple : nom de famille en petites capitales et prénom en minuscules
 #### Définir un susbtitut au nom d'auteur
 L'élément `substitute` définit le substitut au nom de l'auteur à utiliser lorsque le champ _Auteur_ de la notice Zotero est vide. Il doit faire référence à une `macro` ou à une `variable`, on ne peut pas utiliser un élément de type `text term` ou `text value`.
 
-[Spécification CSL : élément `substitute`](http://docs.citationstyles.org/en/1.0.1/specification.html#substitute)
+[Spécification CSL : élément `substitute`](http://docs.citationstyles.org/en/stable/specification.html#substitute)
 
 Le style _Elsevier-Harvard (with titles)_ utilise :
 * l'éditeur scientifique,
@@ -534,7 +530,7 @@ Le style _Elsevier-Harvard (with titles)_ utilise :
 ## 7. Modifier un style, macro conditionnelle
 ### Exercice de style 2
 
- 	✒️ _Pour cet exercice, vous travaillez en équipe avec un collègue :_
+✒️ _Pour cet exercice, vous travaillez en équipe avec un collègue :_
 
 * _l'un est le conducteur et assure la saisie du code,_
 * _l'autre est le navigateur et apporte au conducteur, aide, commentaires et suggestions._
@@ -551,7 +547,7 @@ La `macro name="title"` du style est un peu plus complexe que la `macro name="au
 
 ### Exercice de style 3
 
- 	✒️ Modifiez le style _Elsevier - Harvard (with titles)_ pour que la mise en forme des volumes, numéros et pages pour les articles de revues corresponde aux consignes du style Garni.
+✒️ Modifiez le style _Elsevier - Harvard (with titles)_ pour que la mise en forme des volumes, numéros et pages pour les articles de revues corresponde aux consignes du style Garni.
 
 ## 8. Les différents types de condition
 L'élément `choose` peut avoir pour parent un autre élément que `macro` : il peut être élément enfant de l'élément `layout` pour le **paramétrage des notes** par exemple.
@@ -579,7 +575,7 @@ ex : `<if type="book thesis" match="any">` la condition se réalise si le docume
 
 ex : `<if variable="volume" match="none">` la condition se réalise si la variable volume est absente, _i. e_. si le champ _Volume_ de la  notice Zotero est vide.
 
-[Spécification CSL : élément `choose`](http://docs.citationstyles.org/en/1.0.1/specification.html#choose)
+[Spécification CSL : élément `choose`](http://docs.citationstyles.org/en/stable/specification.html#choose)
 
 ## 9. Les appels de citation et les notes, l'élément `citation`
 
@@ -625,7 +621,7 @@ Le paramétrage pour les styles **numériques** demeurant simple et sommaire, no
 #### Désambiguïser
 Dans les styles auteur-date, l'élément `citation` doit comporter des règle de désambiguïsation des citations, afin de distinguer des documents ayant les mêmes auteurs et la même date de publication. CSL envisage cette désambiguïsation selon 3 étapes, exprimées par des attributs de l'élément `citation`.
 
-Présentons en bref les 3 étapes détaillées dans [Spécification CSL : Disambiguation](http://docs.citationstyles.org/en/1.0.1/specification.html#disambiguation)
+Présentons en bref les 3 étapes détaillées dans [Spécification CSL : Disambiguation](http://docs.citationstyles.org/en/stable/specification.html#disambiguation)
 
 ##### Etape 1
 `disambiguate-add-names` : par l’ajout d’un nom, sans tenir compte du paramétrage du `et-al`
@@ -642,7 +638,7 @@ Présentons en bref les 3 étapes détaillées dans [Spécification CSL : Disamb
 #### Grouper
 Il s'agit de regrouper les citations multiples par auteur. Ce regroupement est activé par l'attribut `cite-group-delimiter`. Ainsi (Doe 1999; Smith 2002; Doe 2006; Doe et al. 2007) devient (Doe 1999; Doe 2006; Smith 2002; Doe et al. 2007).
 
-[Spécification CSL  : Cite Grouping ](http://docs.citationstyles.org/en/1.0.1/specification.html#cite-grouping)
+[Spécification CSL  : Cite Grouping ](http://docs.citationstyles.org/en/stable/specification.html#cite-grouping)
 
 #### Compacter
 Il s'agit non seulement de regrouper, mais plus encore de compacter les citations multiples. L'attribut `collapse` active le regroupement et le compactage et peut avoir les valeurs suivantes.
@@ -652,7 +648,7 @@ Il s'agit non seulement de regrouper, mais plus encore de compacter les citation
 *   `"year-suffix"` : idem que le précédent, mais compacte aussi des années identiques, par ex. : (Doe 2000a, Doe 2000b) devient (Doe 2000a, b).
 *   `"year-suffix-ranged"` : idem que le précédent, mais compacte aussi les suffixes, par ex. : (Doe 2000a, b, c, e) devient (Doe 2000a-c, e).
 
-[Spécification CSL : Cite Collapsing](http://docs.citationstyles.org/en/1.0.1/specification.html#cite-collapsing)
+[Spécification CSL : Cite Collapsing](http://docs.citationstyles.org/en/stable/specification.html#cite-collapsing)
 
 #### Paramétrer le `et-al`
 Plusieurs attributs de l'élément `citation` permettent de définir les paramètres d'affichage du `et-al`.
@@ -709,47 +705,47 @@ Style [Presses Universitaires de Rennes (Français)](https://www.zotero.org/styl
 
 ```
 <citation>
-  <layout suffix="." delimiter="&#160;; ">
-    <choose>
-      <if position="ibid-with-locator">
-        <group delimiter=", ">
-          <text term="ibid" text-case="capitalize-first" font-style="italic" suffix="."/>
-          <text variable="locator" prefix="p. "/>
-        </group>
-      </if>
-      <else-if position="ibid">
-        <text term="ibid" text-case="capitalize-first" font-style="italic"/>
-      </else-if>
-      <else-if position="subsequent">
-        <group delimiter=", ">
-          <text macro="author"/>
-          <choose>
-            <if type="bill book graphic legal_case motion_picture report song thesis" match="any">
-              <text variable="title" form="short" font-style="italic"/>
-            </if>
-            <else>
-              <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
-            </else>
-          </choose>
-          <text term="cited" font-style="italic" suffix="."/>
-          <text variable="locator" prefix="p.&#160;"/>
-        </group>
-      </else-if>
-      <else>
-        <group delimiter=", ">
-          <text macro="author"/>
-          <text macro="title"/>
-          <text macro="translator"/>
-          <text macro="edition"/>
-          <text macro="pub-place"/>
-          <text macro="publisher"/>
-          <text macro="collection"/>
-          <text macro="yearpage"/>
-        </group>
-      </else>
-    </choose>
-  </layout>
-</citation>
+    <layout suffix="." delimiter="&#160;; ">
+      <choose>
+        <if position="ibid-with-locator">
+          <group delimiter=", ">
+            <text term="ibid" text-case="capitalize-first" font-style="italic" suffix="."/>
+            <text macro="point-locator"/>
+          </group>
+        </if>
+        <else-if position="ibid">
+          <text term="ibid" text-case="capitalize-first" font-style="italic"/>
+        </else-if>
+        <else-if position="subsequent">
+          <group delimiter=", ">
+            <text macro="author"/>
+            <choose>
+              <if type="bill book graphic legal_case motion_picture report song thesis" match="any">
+                <text variable="title" form="short" font-style="italic"/>
+              </if>
+              <else>
+                <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
+              </else>
+            </choose>
+            <text term="cited" font-style="italic" suffix="."/>
+            <text macro="point-locator"/>
+          </group>
+        </else-if>
+        <else>
+          <group delimiter=", ">
+            <text macro="author"/>
+            <text macro="title"/>
+            <text macro="translator"/>
+            <text macro="edition"/>
+            <text macro="pub-place"/>
+            <text macro="publisher"/>
+            <text macro="collection"/>
+            <text macro="yearpage"/>
+          </group>
+        </else>
+      </choose>
+    </layout>
+  </citation>
 ```
 
 ## 10. La bibliographie
@@ -806,22 +802,23 @@ Les attributs suivants sont applicables uniquement à l'élément `bibliography`
 
 *   `hanging-indent` : retrait  par rapport à la marge
 *   `second-field-align` : `flush` ou `margin`  (`margin` : permet de placer les numéros de citation dans la marge)
-*   `entry-spacing` et  `line-spacing` : espacement à l’intérieur de la bibliographie
+*   `entry-spacing` : espacement entre chaque entrée de la bibliographie, exprimée en nombre d'interlignes
+* `line-spacing` : valeur de l'interligne dans la bibliographie
 
-[Spécification CSL : Whitespace](http://docs.citationstyles.org/en/1.0.1/specification.html#whitespace)
+[Spécification CSL : Whitespace](http://docs.citationstyles.org/en/stable/specification.html#whitespace)
 
 #### Grouper par nom d'auteur
 Il s'agit, lorsque des références adjacentes ont le(s) même(s) auteur(s), de remplacer les occurrences suivantes de ce(s) nom(s) par un substitut, défini par la valeur de l'attribut `subsequent-author-substitute`.
 
 L'attribut `subsequent-author-substitute-rule` paramètre les règles de substitution qui s'appliquent.
 
-[Spécification CSL : Reference Grouping](http://docs.citationstyles.org/en/1.0.1/specification.html#reference-grouping)
+[Spécification CSL : Reference Grouping](http://docs.citationstyles.org/en/stable/specification.html#reference-grouping)
 
 ### Créer une bibliographie par type de document
 #### Créer une `macro`
 On va assigner à chaque type de document (ou groupe de types de document) un numéro, correspondant à son numéro d'ordre d'apparition dans la bibliographie.
 
-Dans l'exemple suivant, les livres et sections de livres seront tous cités en premier, puis les articles de revues, puis tous les autres types de documents.
+Dans l'exemple suivant, les livres et chapitres de livre seront tous cités en premier, puis les articles de revues, puis tous les autres types de documents.
 
 ```
 <macro name="sort-key">
