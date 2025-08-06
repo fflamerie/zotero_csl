@@ -1,6 +1,6 @@
 # Créer des styles bibliographiques CSL
 
-Matériel de la formation ["Créer des styles bibliographiques CSL - Zotero, Mendeley, Papers : utilisateurs avancés"](https://sygefor.reseau-urfist.fr/#/training/9162/10610) organisée par l'Urfist Bordeaux à Bordeaux le 2021-11-23, 9h-16h.
+Matériel de la formation ["Créer des styles bibliographiques CSL - Zotero, Mendeley, Papers : utilisateurs avancés"](https://sygefor.reseau-urfist.fr/#/training/9162/10610) - stage Urfist.
 
 **Dernière mise à jour 2023-05-11**
 
