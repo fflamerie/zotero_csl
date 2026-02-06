@@ -10,7 +10,7 @@
     </author>
     <category citation-format="author-date"/>
     <category field="biology"/>
-    <updated>2023-04-23T03:04:17+00:00</updated>
+    <updated>2026-02-06T03:04:17+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -170,10 +170,10 @@
       </else-if>
     </choose>
   </macro>
-  <!--Mise en forme des informations d'accès pour les pages web, les rapports et les documents-->
+  <!--Mise en forme des informations d'accès pour les pages web, les rapports, les documents, les enregistrements audio et vidéo, les podcasts-->
   <macro name="access">
     <choose>
-      <if type="document report webpage post-weblog" match="any">
+      <if type="document report webpage post-weblog motion_picture broadcast song" match="any">
     <group delimiter=" ">
       <text term="available at"/>
       <text variable="URL" prefix="&lt;" suffix="&gt;"/>
